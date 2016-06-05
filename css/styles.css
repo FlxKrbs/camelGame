@@ -1,0 +1,89 @@
+/* Basics */
+body,html           {font-family: Lato; font-size: 14px; font-weight: normal; padding: 0px; margin: 0px;}
+a,p                 {font-size: 20px;}
+h1,h2,h3,h4,h5      {margin: 0px 20% 40px 20%; font-weight: normal; color: #000;}
+h1                  {font-size: 5em;}
+.clear              {clear: both;}
+
+.btn                                    {  cursor: pointer;text-decoration: none;text-align: center;display: inline-block;padding: 20px 30px;font-size: 16px;background: #ff3e01;color: #fff;text-transform: uppercase;margin: 0px auto;min-width: 280px;} 
+.btn-primary                            {}
+.btn-large                              {padding:30px 50px; font-size: 21px;}
+
+.errorBox                               {background: #ff0000; z-index: 9; width: 100%; position: fixed; height: 60px; line-height: 60px; padding:0px 20px; color: #fff; font-size: 15px; text-align: center; top:-60px;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-ms-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
+.errorBox.active                        {top:0px;}
+
+/* Content */
+section                                 {text-align: center; }
+#section0                               {background-image: url(../img/bg_camel_emotion.jpg);background-position: bottom center;}
+#section0 h1                            {color:#fff}
+
+.block                                  {margin-bottom: 40px;}
+.block p                                {font-size: 40px; color: #fff}
+.block label                            {background: rgba(0,0,0,0.6); color:#fff; cursor: pointer;padding: 40px 0; display: block; font-size: 18px;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-ms-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
+.block label.active                     {background: rgba(0,0,0,0.8); opacity: 1 !important; }
+.block label.active::before             {background-image: url(../img/img_selection_done.png) !important;}
+.block input[type=radio]                {display: none;}
+.block label::before                    {content: ''; width: 100%; height: 40px; display: inline-block; margin-bottom: 20px; background-size: contain; background-repeat: no-repeat; background-position: center center;}
+
+/* Block Age +*/
+.block_age label                        {padding-top:30px !important; padding-bottom: 30px !important; margin-top: 30px !important; font-size: 20px !important}
+.block_age label::before                {display: none;}
+
+/* Block Cooking */
+#label_hand_01::before                  { background-image: url(../img/img_hand_left.png);}
+#label_hand_02::before                  { background-image: url(../img/img_hand_right.png);}
+
+/* Block Cooking */
+#label_cooking_01::before               { background-image: url(../img/img_thumb_up.png);}
+#label_cooking_02::before               { background-image: url(../img/img_thumb_right.png);}
+#label_cooking_03::before               { background-image: url(../img/img_thumb_down.png);}
+
+/* Block Ass */
+#label_ass_01::before                   { background-image: url(../img/img_ass_cherry.png);}
+#label_ass_02::before                   { background-image: url(../img/img_ass_apple.png);}
+#label_ass_03::before                   { background-image: url(../img/img_ass_pear.png);}
+
+/* Block Body */
+#label_body_01::before                  { background-image: url(../img/img_figure_thin.png);}
+#label_body_02::before                  { background-image: url(../img/img_figure_normal.png);}
+#label_body_03::before                  { background-image: url(../img/img_figure_fat.png);}
+
+/* Block Type */
+#label_type_01::before                  { background-image: url(../img/img_type_romantic.png);}
+#label_type_02::before                  { background-image: url(../img/img_type_funny.png);}
+#label_type_03::before                  { background-image: url(../img/img_type_flash.png);}
+
+/* Result-Content */
+#calcResult                             { font-size: 25px; margin: 50px 20px 20px 20px; display: none;}
+#calcResult img                         {margin:0px 5px;}
+#calcResult.active                      {padding:20px; background: #fff; border: 2px solid #ccc;}
+
+#calculateNow                           {position: relative;}
+#calculateNow.loading                   {color:transparent}
+#calculateNow.loading::before           {top:0px; right:0px; bottom:0px; left:0px; margin: auto; content: '';position: absolute;width: 30px;height: 30px;border-radius: 50%;border: 4px solid rgba(255,255,255, .3);border-top-color: rgba(255,255,255, .8);animation: spinner .6s linear infinite;-webkit-animation: spinner .6s linear infinite;}
+ 
+/* Mobile Devices */
+@media (max-width: 768px) {
+    h1                                  {font-size: 2em; margin-left: 0px; margin-right: 0px;}
+    .btn                                {min-width: 1px; width:100%; box-sizing: border-box}
+    section .block                      {padding:0px 20px;}
+    .sectionWithQuestion label          {margin-top: 10px; font-size: 16px; padding-top: 15px; padding-bottom: 15px}
+    .sectionWithQuestion label::before  {height:25px; margin-bottom: 10px;}
+    #calcResult                         {margin-left: 0; margin-right: 0}
+    #calcResult img                     {width:35px;}
+}
+
+/* Tablet Devices */
+@media (min-width: 768px) and (max-width: 992px) {
+    h1                                  {font-size: 4em; margin-left: 0px; margin-right: 0px;}
+    section .block                      {padding:0px 20px;}
+}
+
+/* Keyframe: Rotation Animation for Loading */
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+ 
+@-webkit-keyframes spinner {
+    to {-webkit-transform: rotate(360deg);}
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Lets play a game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+
+</head>
+<body>
+    
+    <div class="errorBox">Bitte vervollständigen Sie Ihre Eingaben.</div>
+    
+    <div id="fullpage">
+        <section class="section sectionWithBGImage" id="section0">
+            <div class="block">
+                <h1>Wie viel Kamele ist deine Freundin wert?</h1>
+                <a onClick="$.fn.fullpage.moveSectionDown()" class="btn btn-primary btn-large">Let's start</a>
+            </div>
+        </section>
+        <section class="section sectionWithQuestion" id="section1">
+            <div class="block block_age">
+                <p>Alter</p>
+                <div class="row">
+                    <div class="col-md-2 col-sm-3 col-xs-6 col-md-offset-2">
+                        <label for="age_01" id="label_age_01">< 19</label>
+                        <input type="radio" name="age" id="age_01" value="1">
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6">
+                        <label for="age_02" id="label_age_02">20 - 29</label>
+                        <input type="radio" name="age" id="age_02" value="2">
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6">
+                        <label for="age_03" id="label_age_03">30 - 39</label>
+                        <input type="radio" name="age" id="age_03" value="1">
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6">
+                        <label for="age_03" id="label_age_03">> 40</label>
+                        <input type="radio" name="age" id="age_03" value="0">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sectionWithQuestion" id="section3">
+            <div class="block block_body">
+                <p>Figur</p>
+                <div class="row">
+                    <div class="col-md-2 col-sm-4 col-xs-12 col-md-offset-3">
+                        <label for="body_01" id="label_body_01">Sportlich</label>
+                        <input type="radio" name="body" id="body_01" value="2">
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-12">
+                        <label for="body_02" id="label_body_02">Normal</label>
+                        <input type="radio" name="body" id="body_02" value="1">
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-12">
+                        <label for="body_03" id="label_body_03">Etwas mehr</label>
+                        <input type="radio" name="body" id="body_03" value="0">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sectionWithQuestion" id="section4">
+            <div class="block block_hand">
+                <p>Händigkeit</p>
+                <div class="row">
+                    <div class="col-md-2 col-sm-4 col-xs-12 col-sm-offset-2 col-md-offset-4">
+                        <label for="hand_01" id="label_hand_01">Linkshänderin</label>
+                        <input type="radio" name="hand" id="hand_01" value="2">
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-12">
+                        <label for="hand_02" id="label_hand_02">Rechtshänderin</label>
+                        <input type="radio" name="hand" id="hand_02" value="2">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sectionWithQuestion" id="section5">
+            <div class="block block_ass ">
+                <p>Hintern</p>
+                <div class="row">
+                    <div class="col-md-2 col-sm-4 col-xs-12 col-md-offset-3">
+                        <label for="ass_01" id="label_ass_01">Kirsche</label>
+                        <input type="radio" name="ass" id="ass_01" value="1">
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-12">
+                        <label for="ass_02" id="label_ass_02">Apfel</label>
+                        <input type="radio" name="ass" id="ass_02" value="2">
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-12">
+                        <label for="ass_03" id="label_ass_03">Birne</label>
+                        <input type="radio" name="ass" id="ass_03" value="0">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sectionWithQuestion" id="section6">
+            <div class="block block_type">
+                <p>Typ</p>
+                <div class="row">
+                    <div class="col-md-2 col-sm-4 col-xs-12 col-md-offset-3">
+                        <label for="type_01" id="label_type_01">Romantisch</label>
+                        <input type="radio" name="type" id="type_01" value="2">
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-12">
+                        <label for="type_02" id="label_type_02">Humorvoll</label>
+                        <input type="radio" name="type" id="type_02" value="2">
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-12">
+                        <label for="type_03" id="label_type_03">Zickig</label>
+                        <input type="radio" name="type" id="type_03" value="0">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sectionWithQuestion" id="section7">
+            <div class="block block_cooking">
+                <p>Kochkünste</p>
+                <div class="row">
+                    <div class="col-md-2 col-sm-4 col-xs-12 col-md-offset-3">
+                        <label for="cooking_01" id="label_cooking_01">Sehr gut</label>
+                        <input type="radio" name="cooking" id="cooking_01" value="2">
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-12">
+                        <label for="cooking_02" id="label_cooking_02">Mittelmäßig</label>
+                        <input type="radio" name="cooking" id="cooking_02" value="1">
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-12">
+                        <label for="cooking_03" id="label_cooking_03">Unbegabt</label>
+                        <input type="radio" name="cooking" id="cooking_03" value="0">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section" id="section8">
+            <div class="block">
+                <a id="calculateNow" class="btn btn-primary btn-large">Ergebnis berechnen</a>
+                <div class="clear"></div>
+                
+                <div id="calcResult"></div>
+                
+            </div>
+        </section>
+        
+    </div>
+    
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>
